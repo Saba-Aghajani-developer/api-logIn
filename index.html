@@ -283,7 +283,7 @@
                     d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
             </svg>
         </div>
-        <div id="left"></div>
+        <div id="left"><img src="gif/1.gif" alt=""></div>
         <div id="right"></div>
 
     </div>
@@ -402,7 +402,6 @@
             if ((x == '') && (y == '') && (z == '')) {
                 popup.style.transform = 'translate(-50%,-50%) scale(1)'
                 right.innerHTML = `Please Complete The Form!`
-                left.style.background = 'url(gif/1.gif)'
             } else {
                 fetch('https://653aab712e42fd0d54d44d33.mockapi.io/users', {
                     method: 'POST',
@@ -438,7 +437,6 @@
         if ((_password == '') && (_username == '')) {
             popup.style.transform = 'translate(-50%,-50%) scale(1)'
             right.innerHTML = `Please Complete The Form!`
-            left.style.background = 'url(gif/1.gif)'
         } else {
             fetch('https://653aab712e42fd0d54d44d33.mockapi.io/users', {
                 method: 'GET',
@@ -456,7 +454,6 @@
                     ) {
                         popup.style.transform = 'translate(-50%,-50%) scale(1)'
                         right.innerHTML = `<h3>Hi Dear ${val[i].username}</h3> Welcome To My Website!`
-                        left.style.background = 'url(gif/1.gif)'
                         _username = ''
                         _password = ''
 
